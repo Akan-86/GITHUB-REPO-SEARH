@@ -1,0 +1,124 @@
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gradient-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #30cfd0, #330867);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#suggestions {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  cursor: pointer;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > * {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: linear-gradient(90deg, #30cfd0, #330867);
+}
+
+#exampleSearches button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#exampleSearches button:nth-child(1):hover {
+  background-color: #ffadad;
+  color: #000; /* Siyah metin */
+}
+
+#exampleSearches button:nth-child(2):hover {
+  background-color: #ffd6a5;
+  color: #000;
+}
+
+#exampleSearches button:nth-child(3):hover {
+  background-color: #fdffb6;
+  color: #000;
+}
+
+#exampleSearches button:nth-child(4):hover {
+  background-color: #caffbf;
+  color: #000;
+}
+
+#exampleSearches button:nth-child(5):hover {
+  background-color: #9bf6ff;
+  color: #000;
+}
+
+#exampleSearches button:nth-child(6):hover {
+  background-color: #a0c4ff;
+  color: #000;
+}
+
+#exampleSearches button:nth-child(7):hover {
+  background-color: #bdb2ff;
+  color: #000;
+}
+
+.card {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > * {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#results .col-md-4 {
+  display: flex;
+}
+
+#results .col-md-4 .card {
+  flex: 1;
+}
